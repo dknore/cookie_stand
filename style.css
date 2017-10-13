@@ -1,0 +1,35 @@
+body {
+  font-family: fantasy, Sans, serif;
+  margin: 0px;
+}
+
+.image {
+    background-image: url(images/);
+    background-size: cover;
+    width: 100%;
+    height: -webkit-fill-available;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#imagetxt {
+  color: rgb(249, 248, 247);
+  text-align: left;
+  font-size: 60px;
+  margin-left: 90px;
+  padding-top: 90px;
+}
+
+#dkphoto img {
+  height: 80px;
+  width: 80px;
+  margin-left: 125px;
+  margin-top: 20px
+  border: black;
+  border-radius: 50%;
+}
+
+.body {
+  background-color: 	rgb(249, 248, 247);
+  opacity: .9;
+}
