@@ -1,5 +1,5 @@
 body {
-  font-family: fantasy, Sans, serif;
+  font-family: Rye, Sans, serif;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-.titletxt {
+p#titletxt {
     color: rgba(236, 228, 226, 1);
     font-size: 100px;
     text-align: -webkit-center;
@@ -23,6 +23,8 @@ body {
 p#salmon {
   width: -webkit-fill-available;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 p#hours {
@@ -52,4 +54,18 @@ li {
 #body {
   background-color: rgba(249, 230, 225, 1);
   color: rgb(78, 72, 70);
+}
+
+.stores {
+  font-family: Garamond;
+  background-color: white;
+  border-radius: 20px;
+  opacity: .5;
+  color: black;
+  text-align: left;
+  height: 400px;
+  width: 100px;
+  padding: 10px;
+  margin: 20px;
+  display: inline;
 }

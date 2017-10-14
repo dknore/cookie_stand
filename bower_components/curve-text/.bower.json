@@ -1,0 +1,36 @@
+{
+  "name": "curve-text",
+  "description": "assists in curving css text",
+  "main": "dist/curveText.js",
+  "authors": [
+    "Andrew Trigg"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "['curve'",
+    "'rotate'",
+    "'css'",
+    "'text']"
+  ],
+  "homepage": "https://github.com/AndrewT51/curveCssText",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "439ff5a1e1810543cacc3cc2d21ba5273495d7ba"
+  },
+  "_source": "https://github.com/AndrewT51/curveCssText.git",
+  "_target": "^0.0.1",
+  "_originalSource": "curve-text",
+  "_direct": true
+}
