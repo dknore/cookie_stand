@@ -75,21 +75,25 @@ function makeStoreRows() {
       var totEl = document.createElement('td');
       totEl.textContent = allLocations[m].this.cookiesSoldByHour[n];
       trEl.appendChild(totEl);
-      console.log('inside!!!', totEl);
+      console.log(totEl);
     }
     cookietable.appendChild(trEl);
   }
 }
 makeStoreRows();
-// function makeFooterRow() {
-//   var cookietable = document.getElementById('cookietable')
-//   var trEl = document.createElement('tr');
-//   for(var n = 0; n < allLocations.length; n++) {
-//     var totEl = document.createElement('th');
-//     hourEl.textContent = hours[l];
-//     trEl.appendChild();
-//     console.log();
-//   }
-//   cookietable.appendChild(trEl);
-// }
-// makeFooterRow();
+
+function makeFooterRow() {
+  var cookietable = document.getElementById('cookietable');
+  var trEl = document.createElement('tr');
+  var totEl = document.createElement('td');
+  totEl.textContent = 'Total: ';
+  trEl.appendChild(totEl);
+  for(var n = 0; n < hours.length; n++) {
+    var netEl = document.createElement('td');
+    netEl.textContent = allLocations.this.totalCookies * hours.length[n];
+    trEl.appendChild(netEl);
+    console.log();
+  }
+  cookietable.appendChild(trEl);
+}
+makeFooterRow();
