@@ -8,6 +8,7 @@
 }
 
 p#titletxt {
+    font-family: Rye, sans-serif, serif;
     color: rgba(236, 228, 226, 1);
     font-size: 50px;
     text-align: -webkit-center;
@@ -15,10 +16,11 @@ p#titletxt {
     padding-top: 30px;
 }
 
-p#salmon {
-  width: -webkit-fill-available;
+#salmon {
+  width: 300px;
   text-align: center;
   margin-top: 50px;
+  padding-left: 40%;
 }
 
 #body {
@@ -27,13 +29,23 @@ p#salmon {
   height: -webkit-fill-available;
 }
 
+form {
+  color: rgba(236, 228, 226, 1)
+  height: 400px;
+  width: 800px;
+  padding-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
 #cookietable {
   background-color: white
   border-color: 1px solid black;
   vertical-align: middle;
   height: auto;
   width: auto;
-  padding-top: 80px;
+  padding-top: 50px;
   margin: 0px 30px 0px 30px;
 }
 

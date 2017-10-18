@@ -8,9 +8,23 @@
   <body>
     <div id="backgroundimg">
       <p id="titletxt">Salmon Cookies: Projected Daily Sales by Location</p>
-      <p id="salmon"><img src="images/salmon.png" alt="Salmon photo" height="100px" width="200px"/></p>
+      <img id="salmon" src="images/salmon.png" alt="Salmon photo" height="100px" width="200px" align="center"/>
     </div>
     <div id="body">
+    <form id="store-form">
+      <fieldset>
+        <legend>Add New Store Location</legend>
+          <label for="storename">New Store Location: </label>
+          <input name="storename" type="text" /><br>
+          <label for="mincust">Minimum Customers per Hour: </label>
+          <input name="mincust" type="text" />
+          <label for="maxcust">Maximum Customers per Hour: </label>
+          <input name="maxcust" type="text" /><br>
+          <label for="avgcook">Average Cookies per Sale: </label>
+          <input name="avgcook" type="text" />
+          <button height="50px" width="80px"></button>
+      </fieldset>
+    </form>
     <table id="cookietable">
     </div>
     <script src="table.js" type="text/javascript"></script>
