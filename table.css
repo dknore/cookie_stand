@@ -29,6 +29,18 @@ p#titletxt {
   height: -webkit-fill-available;
 }
 
+fieldset {
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+legend {
+  font-size: 18px;
+  height: 20px;
+  width: 200px;
+  padding: 10px
+}
+
 form {
   color: rgba(236, 228, 226, 1)
   height: 400px;
@@ -36,7 +48,14 @@ form {
   padding-top: 100px;
   margin-right: auto;
   margin-left: auto;
+}
 
+button {
+
+}
+
+#createstore:hover {
+  background-color: salmon;
 }
 
 #cookietable {
@@ -57,7 +76,11 @@ th {
   padding: 20px;
 }
 
-tr {
+tr:nth-child(even) {
+
+}
+
+tr:nth-child(odd) {
   background-color: white;
   border: black;
   font-family: Verdana;
