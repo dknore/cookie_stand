@@ -91,3 +91,17 @@ makeStoreRows();
 //   cookietable.appendChild(trEl);
 // }
 // // makeFooterRow();
+
+document.getElementById('createstore').addEventListenter('click', function(event) {
+  event.preventDefault();
+  var elem = document.getElementById('total');
+  elem.parentElement.removeChild(elem);
+
+  var newStoreLocation = document.getElementById('storename').value;
+  var newMinCust = document.getElementById('mincust').value;
+  var newMaxCust = document.getElementById('maxcust').value;
+  var newAvgCookiesPerSale = document.getElementById('avgcook').value;
+  allLocations.newStoreLocation = new MakeLocation(newStoreLocation, newMinCust, newMaxCust, newAvgCookiesPerSale);
+  allLocations.newStoreLocation.render();
+  allLocations.newStoreLocation.makefooter();
+});

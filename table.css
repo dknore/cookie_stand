@@ -32,12 +32,12 @@ p#titletxt {
 fieldset {
   border-radius: 10px;
   border: 2px solid;
+  margin: 20px;
 }
 
 legend {
   font-size: 18px;
   height: 20px;
-  width: 200px;
   padding: 10px
 }
 
@@ -45,39 +45,41 @@ form {
   color: rgba(236, 228, 226, 1)
   height: 400px;
   width: 800px;
-  padding-top: 100px;
+  padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
 }
 
 button {
-
-}
-
-#createstore:hover {
   background-color: salmon;
 }
 
-#cookietable {
+#createstore:hover {
+  background-color: white;
+}
+
+table {
   background-color: white
-  border-color: 1px solid black;
+  border: black;
+  border-collapse: collapse;
   vertical-align: middle;
   height: auto;
   width: auto;
   padding-top: 50px;
-  margin: 0px 30px 0px 30px;
+  margin: 50px;
 }
 
 th {
   background-color: white;
-  border-color: 1px solid black;
+  border: black;
   font-family: Arial;
   color: black;
   padding: 20px;
 }
 
 tr:nth-child(even) {
-
+  background-color: gray;
+  border: black;
 }
 
 tr:nth-child(odd) {
