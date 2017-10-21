@@ -3,16 +3,16 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var allLocations = [];
 var totalCookiesByHour = 0;
-var totalCookiesByLocation = 0;
+var totalCookiesbyLocation = 0;
 
-function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookiesSoldPerHour) {
+function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour) {
   this.name = name,
   this.minCustPerHour = minCustPerHour,
   this.maxCustPerHour = maxCustPerHour,
-  this.avgCookiesSoldPerHour = avgCookiesSoldPerHour,
-  this.randCustPerHour = [],
-  this.avgCookiesSoldByHour = [],
-  this.totalCookiesSoldByLocation = 0,
+  this.avgCookieSoldPerHour = avgCookieSoldPerHour,
+  this.randCustByHour = [],
+  this.cookiesSoldByHour = [],
+  this.totalCookiesbyLocation = 0,
   allLocations.push(this);
 
   for(var i = 0; i < hours.length; i++) {
@@ -20,14 +20,13 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookiesSoldPerHou
   }
 
   for(var j = 0; j < hours.length; j++) {
-    this.avgCookiesSoldPerHour.push(Math.round(this.avgCookiesSoldPerHour * this.randCustPerHour[j]));
+    this.cookiesSoldByHour.push(Math.round(this.avgCookiesSoldPerHour * this.randCustByHour[j]));
   }
 
-  //   for(var k = 0; k < this.avgCookiesSoldPerHour.length; k++) {
-  //     this.totalCookiesSoldPerDay = this.totalCookiesSoldPerDay + this.avgCookiesSoldPerHour[k];
-  //     this.calcTotalCookiesSoldPerDay();
-  //   }
-  // };
+  // for(var k = 0; k < this.cookiesSoldByHour.length; k++) {
+  //   var sumTotal = this.cookiesSoldByHour[k];
+  //   this.totalCookiesbyLocation.push(sumTotal);
+  // }
 }
 
 function makeStand() {
@@ -57,7 +56,7 @@ function makeHeaderRow() {
 }
 makeHeaderRow();
 
-function makeStoreRows () {
+function makeStoreRows() {
   var cookietable = document.getElementById('cookietable');
   for(var m = 0; m < allLocations.length; m++) {
     var trEl = document.createElement('tr');
@@ -71,6 +70,8 @@ function makeStoreRows () {
       trEl.appendChild(totEl);
       cookietable.appendChild(trEl);
     }
+    // var totalEl = document.createElement('td');
+    // totalEl.textContent = this.totalCookiesbyLocation;
   }
 }
 makeStoreRows();
@@ -89,4 +90,4 @@ makeStoreRows();
 //   }
 //   cookietable.appendChild(trEl);
 // }
-// makeFooterRow();
+// // makeFooterRow();
