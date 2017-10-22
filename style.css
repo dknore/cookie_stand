@@ -1,6 +1,21 @@
 body {
   font-family: Rye, sans-serif, serif;
+  box-sizing: border-box;
   margin: 0;
+}
+
+.navbar {
+  list-style-type: none;
+  display: inline;
+  font-size: 24px;
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 30px 100px 70px 100px;
+}
+
+a {
+  color: rgba(236, 228, 226, 1);
 }
 
 #backgroundimg {
@@ -17,7 +32,7 @@ p#titletxt {
     font-size: 100px;
     text-align: -webkit-center;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 p#salmon {
@@ -32,26 +47,54 @@ p#hours {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-top: 70px;;
+  margin-top: 60px;;
 }
 
-ul#locations {
-  width: 100%;
-  height: 80px;
-  margin: 0;
-  text-align: center;
+ul.addresses {
+  display: table-cell;
+  padding: 0;
   font-size: 20px;
+  text-align: center;
   color: rgb(39, 38, 38);
 }
 
 li {
-  display: inline-block;
-  padding-left: 0px;
-  padding-right: 60px;
-  margin: 20px 25px
+  padding-left: 40px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  list-style-type: none;
 }
 
 #body {
-  background-color: rgba(249, 230, 225, 1);
+  background-color: rgba(251, 188, 172, 1);
   color: rgb(78, 72, 70);
+  padding: 20px
+}
+
+#familypic {
+  display: inline-block;
+  height: 400px;
+  width: 500px;
+  border-radius: 10%;
+  margin-top: 100px
+}
+
+p#aboutus {
+  margin: 100px 50px;
+  padding: 100px;
+  height: 300px;
+  width: 200px
+  text-align: center;
+}
+
+#cookiecutter {
+  display: inline-block;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+#salmonshirt {
+  margin-top: 70px
 }

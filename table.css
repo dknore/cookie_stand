@@ -23,7 +23,7 @@ p#titletxt {
   padding-left: 40%;
 }
 
-#body {
+body {
   background-color: rgba(249, 230, 225, 1);
   color: rgb(78, 72, 70);
   height: -webkit-fill-available;
