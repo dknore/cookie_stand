@@ -50,7 +50,7 @@ function makeHeaderRow() {
     trEl.appendChild(hourEl);
   }
   var tdEl = document.createElement('td');
-  tdEl.textContent = 'Total';
+  tdEl.textContent = 'Total/Day';
   trEl.appendChild(tdEl);
   cookietable.appendChild(trEl);
 }
@@ -76,32 +76,36 @@ function makeStoreRows() {
 }
 makeStoreRows();
 
+//Make Footer/Totals Row
 // function makeFooterRow() {
 //   var cookietable = document.getElementById('cookietable');
 //   var trEl = document.createElement('tr');
 //   var totEl = document.createElement('td');
-//   totEl.textContent = 'Total: ';
+//   totEl.textContent = 'Totals/Hr: ';
 //   trEl.appendChild(totEl);
-//   for(var n = 0; n < hours.length; n++) {
-//     var netEl = document.createElement('td');
-//     netEl.textContent = allLocations.this.totalCookies * hours.length[n];
-//     trEl.appendChild(netEl);
+//   cookietable.appendChild(trEl);
+//   for(var o = 0; o < hours.length; o++) {
+//     var totalPerHrEl = document.createElement('td');
+//     totalPerHrEl.textContent = allLocations.cookiesSoldByHour[o];
+//     trEl.appendChild(totalPerHrEl);
 //     console.log();
 //   }
 //   cookietable.appendChild(trEl);
 // }
-// // makeFooterRow();
+// makeFooterRow();
 
-document.getElementById('createstore').addEventListenter('click', function(event) {
+var createStore = document.getElementById('createstore');
+
+createStore.addEventListener('click', function(event) {
   event.preventDefault();
-  var elem = document.getElementById('total');
-  elem.parentElement.removeChild(elem);
+  // var elem = document.getElementById('total');
+  // elem.parentElement.removeChild(elem);
 
   var newStoreLocation = document.getElementById('storename').value;
   var newMinCust = document.getElementById('mincust').value;
   var newMaxCust = document.getElementById('maxcust').value;
   var newAvgCookiesPerSale = document.getElementById('avgcook').value;
-  allLocations.newStoreLocation = new MakeLocation(newStoreLocation, newMinCust, newMaxCust, newAvgCookiesPerSale);
-  allLocations.newStoreLocation.render();
-  allLocations.newStoreLocation.makefooter();
+  new MakeLocation(newStoreLocation, newMinCust, newMaxCust, newAvgCookiesPerSale);
+  allLocations[(allLocations.length - 1)];
+  //allLocations.newStoreLocation.makefooter();
 });
